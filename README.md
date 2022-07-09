@@ -1,1 +1,0 @@
-# Foobar_challenge_2022
