@@ -1,4 +1,3 @@
-'''
 Write a function called solution(data, n) that takes in a list of less than 100 integers and a number n, 
 and returns that same list but with all of the numbers that occur more than n times removed entirely. 
 The returned list should retain the same ordering as the original list - you don't want to mix up those 
@@ -26,11 +25,3 @@ Input:
 solution.solution([1, 2, 2, 3, 3, 3, 4, 5, 5], 1)
 Output:
     1,4
-    '''
-
-def solution(data, n): 
-    from collections import Counter
-    counting_set= Counter(data)
-    x=[key for key,value in counting_set.items() if value>n]
-    data=list(filter(lambda i : i not in x, data)) 
-    return data
